@@ -4,15 +4,6 @@ import React from "react";
 import { useState } from "react";
 import { Routes, Route } from "react-router-dom";
 
-function Home() {
-
-  return (
-    <div className="homeContent">
-      <h2 className="homeTitle">Which Services Can we Help You With?</h2>
-    </div>
-  );
-}
-
 
 function App() {
   const [isOpen, setIsOpen] = useState(false);
@@ -59,5 +50,56 @@ function App() {
   );
 }
 
+function Home() {
+
+  return (
+    <div className="homeContent">
+      <h2 className="homeTitle">Which Services Can we Help You With?</h2>
+      <div className="homeOptions">
+        <div className="homeOption">
+          <h3>Service 1</h3>
+        </div>
+        <div className="homeOption">
+          <h3>Service 2</h3>
+        </div>
+        <div className="homeOption">
+          <h3>Service 3</h3>
+        </div>
+        <div className="homeOption">
+          <h3>Service 4</h3>
+        </div>
+      </div>
+      <div className="homeOptions">
+        <div className="homeOption">
+          <h3>Service 5</h3>
+        </div>
+        <div className="homeOption">
+          <h3>Service 6</h3>
+        </div>
+        <div className="homeOption">
+          <h3>Service 7</h3>
+        </div>
+        <div className="homeOption">
+          <h3>Service 8</h3>
+        </div>
+      </div>
+      <div className="homeOptions">
+        <div className="homeOption">
+          <h3>Service 9</h3>
+        </div>
+        <div className="homeOption">
+          <h3>Service 10</h3>
+        </div>
+        <div className="homeOption">
+          <h3>Service 11</h3>
+        </div>
+        <div className="homeOption">
+          <h3>Service 12</h3>
+        </div>
+      </div>
+
+    </div>
+  );
+}
 
 export default App;
