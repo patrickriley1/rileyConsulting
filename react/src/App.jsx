@@ -2,6 +2,17 @@ import "./index.css";
 import "./App.css";
 import React from "react";
 import { useState } from "react";
+import { Routes, Route } from "react-router-dom";
+
+function Home() {
+
+  return (
+    <div className="homeContent">
+      <h2 className="homeTitle">Which Services Can we Help You With?</h2>
+    </div>
+  );
+}
+
 
 function App() {
   const [isOpen, setIsOpen] = useState(false);
@@ -40,8 +51,13 @@ function App() {
           <button className="optionButton">Contact</button>
         </div>
       </div>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/services" element={<div>Services Page</div>} />
+      </Routes>
     </div>
   );
 }
+
 
 export default App;
