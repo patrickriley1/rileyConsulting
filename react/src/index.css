@@ -1,0 +1,8 @@
+:root {
+    --color1: rgb(249, 249, 249);
+    --color2: rgb(0, 5, 39);
+    --color3: rgb(95, 191, 255);
+
+    background-color: var(--color2);
+    font-family: "Montserrat", sans-serif;
+}

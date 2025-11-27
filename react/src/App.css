@@ -1,0 +1,65 @@
+.headerRibbon {
+    width: 100vw;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 50px;
+    background-color: var(--color1);
+    z-index: 1000;
+    margin: 0;
+    padding: 0;
+}
+
+.title {
+    margin-left: -50px;
+}
+
+.verticalLine {
+    height: 80px;
+    margin-right: 150px;
+    border-left: 2px solid var(--color2);
+}
+
+.headerItem {
+    position: relative;
+    margin-top: 22px;
+    z-index: 1001;
+}
+
+.optionButton {
+    border: none;
+    background: transparent;
+    font-size: 1.8rem;
+    color: var(--color2);
+    cursor: pointer;
+}
+
+.dropdownMenu {
+    list-style: none;
+    padding: 6px 0;
+    margin: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: all 0.3s ease;
+    position: absolute;
+    top: calc(100%);
+    background-color: var(--color1);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.18);
+    min-width: 180px;
+}
+.dropdownMenu li {
+    padding: 14px;
+    transition: all 0.3s ease;
+    text-align: center;
+}
+
+.dropdownMenu li:hover {
+    background-color: var(--color3);
+    color: var(--color1);
+    cursor: pointer;
+}
+
