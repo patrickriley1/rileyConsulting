@@ -2,7 +2,8 @@ import "./index.css";
 import "./App.css";
 import React from "react";
 import { useState } from "react";
-import { Routes, Route } from "react-router-dom";
+import { Routes, Route, Link } from "react-router-dom";
+import Contact from "./pages/contact.jsx";
 
 
 function App() {
@@ -12,7 +13,7 @@ function App() {
   return (
     <div className="content">
       <div className="headerRibbon">
-        <div className="title"><h1>Riley Consulting</h1></div>
+        <div className="title"><Link to="/" className="titleLink">Riley Consulting</Link></div>
         <div className="verticalLine"></div>
         <div className="headerItem"
           onMouseEnter={() => setIsOpen(true)}
@@ -39,12 +40,13 @@ function App() {
             )}
         </div>
         <div className="headerItem">
-          <button className="optionButton">Contact</button>
+          <Link to="/contact" className="optionButton">Contact</Link>
         </div>
       </div>
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/services" element={<div>Services Page</div>} />
+        <Route path="/contact" element={<Contact />} />
       </Routes>
     </div>
   );

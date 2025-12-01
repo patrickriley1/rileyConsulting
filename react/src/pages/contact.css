@@ -1,0 +1,25 @@
+.contactDiv {
+    margin-top: 180px;
+    color: var(--color2);
+    text-align: center;
+    width: 500px;
+    height: 600px;
+    background-color: var(--color1);
+    border-radius: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.contactTitle {
+    padding-top: 30px;
+}
+
+.inputDiv {
+    display: flex;
+    flex-direction: column;
+}
+
+.contactInput {
+    width: 300px;
+    margin: auto;
+}

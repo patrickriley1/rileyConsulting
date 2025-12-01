@@ -11,19 +11,24 @@
     background-color: var(--color1);
     z-index: 1000;
     margin: 0;
-    padding: 0;
 }
 
 .title {
+    margin-top: 25px;
+}
+
+.titleLink {
     margin-left: -50px;
-    font-size: 1.3rem;
+    font-size: 2.6rem;
+    color: var(--color2);
+    text-decoration: none;
+    text-align: center;
 }
 
 .verticalLine {
-    height: 80px;
+    height: 100px;
     margin-right: 150px;
     border-left: 2px solid var(--color2);
-    margin-top: 12px;
 }
 
 .headerItem {
@@ -37,6 +42,7 @@
     font-size: 1.8rem;
     color: var(--color2);
     cursor: pointer;
+    text-decoration: none;
 }
 
 .dropdownMenu {
