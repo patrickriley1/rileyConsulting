@@ -11,6 +11,7 @@
     background-color: var(--color1);
     z-index: 1000;
     margin: 0;
+    border: 2px solid var(--color2);
 }
 
 .title {
@@ -87,15 +88,15 @@
 }
 
 .homeOption {
-    width: 150px;
-    height: 150px;
+    width: 200px;
+    height: 300px;
     display: inline-block;
     color: var(--color2);
     background-color: var(--color1);
     text-align: center;
-    border-radius: 10px;
     transition: all 0.3s ease;
     cursor: pointer;
+    border-radius: 2px;
 }
 
 .homeOption:hover {
