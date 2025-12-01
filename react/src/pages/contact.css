@@ -1,5 +1,10 @@
+.contactContent {
+    display: flex;
+    flex-direction: row;
+}
+
 .contactDiv {
-    margin-top: 180px;
+    margin-top: 150px;
     color: var(--color2);
     text-align: center;
     width: 500px;
@@ -51,3 +56,25 @@
     cursor: pointer;
 }
 
+.linkedinDiv {
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+    width: 150px;
+}
+
+.linkedinLogo {
+    width: 40px;
+    height: 40px;
+    margin-top: 20px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.linkedinText {
+    cursor: pointer;
+}
+
+.companyName {
+    margin-top: 40px;
+}

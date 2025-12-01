@@ -96,7 +96,7 @@
     text-align: center;
     transition: all 0.3s ease;
     cursor: pointer;
-    border-radius: 2px;
+    border-radius: 10px;
 }
 
 .homeOption:hover {
