@@ -21,6 +21,7 @@
 .titleLink {
     margin-left: -50px;
     font-size: 2.6rem;
+    font-weight: bold;
     color: var(--color2);
     text-decoration: none;
     text-align: center;
@@ -96,7 +97,6 @@
     text-align: center;
     transition: all 0.3s ease;
     cursor: pointer;
-    border-radius: 10px;
 }
 
 .homeOption:hover {

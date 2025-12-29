@@ -9,6 +9,7 @@ import Contact from "./pages/contact.jsx";
 function App() {
   const [isOpen, setIsOpen] = useState(false);
   const [isOpenAlt, setIsOpenAlt] = useState(false);
+  const [isOpenSecondAlt, setIsOpenSecondAlt] = useState(false);
 
   return (
     <div className="content">
@@ -30,12 +31,27 @@ function App() {
         <div className="headerItem"
           onMouseEnter={() => setIsOpenAlt(true)}
           onMouseLeave={() => setIsOpenAlt(false)}>
-            <button className="optionButton">Consulting</button>
+            <button className="optionButton">Resources</button>
             {isOpenAlt && (
               <ul className="dropdownMenu">
-                <li>Service 1</li>
-                <li>Service 2</li>
-                <li>Service 3</li>
+                <li>Resource 1</li>
+                <li>Resource 2</li>
+                <li>Resource 3</li>
+              </ul>
+            )}
+        </div>
+        <div className="headerItem"
+          onMouseEnter={() => setIsOpenSecondAlt(true)}
+          onMouseLeave={() => setIsOpenSecondAlt(false)}>
+            <button className="optionButton">Who We Serve</button>
+            {isOpenSecondAlt && (
+              <ul className="dropdownMenu">
+                <li>Independant Mortgage Banks</li>
+                <li>Banks</li>
+                <li>Credit Unions</li>
+                <li>Warehouse Banks</li>
+                <li>Secondary Mortgage Market Investors</li>
+                <li>Third Party Providers</li>
               </ul>
             )}
         </div>
