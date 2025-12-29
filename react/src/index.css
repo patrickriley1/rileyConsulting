@@ -4,5 +4,5 @@
     --color3: rgb(95, 191, 255);
 
     background-color: var(--color2);
-    font-family: "Montserrat", "Helvetica", "Arial", "Lucida", sans-serif;
+    font-family: "Montserrat", Helvetica, Arial, Lucida, sans-serif;
 }

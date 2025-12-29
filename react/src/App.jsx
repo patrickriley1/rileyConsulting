@@ -19,7 +19,7 @@ function App() {
         <div className="headerItem"
           onMouseEnter={() => setIsOpen(true)}
           onMouseLeave={() => setIsOpen(false)}>
-            <button className="optionButton">Services</button>
+            <Link to="/services" className="optionButton">Services</Link>
             {isOpen && (
               <ul className="dropdownMenu">
                 <li>Service 1</li>
@@ -31,7 +31,7 @@ function App() {
         <div className="headerItem"
           onMouseEnter={() => setIsOpenAlt(true)}
           onMouseLeave={() => setIsOpenAlt(false)}>
-            <button className="optionButton">Resources</button>
+            <Link to="/resources" className="optionButton">Resources</Link>
             {isOpenAlt && (
               <ul className="dropdownMenu">
                 <li>Resource 1</li>
@@ -43,7 +43,7 @@ function App() {
         <div className="headerItem"
           onMouseEnter={() => setIsOpenSecondAlt(true)}
           onMouseLeave={() => setIsOpenSecondAlt(false)}>
-            <button className="optionButton">Who We Serve</button>
+            <Link to="/who-we-serve" className="optionButton">Who We Serve</Link>
             {isOpenSecondAlt && (
               <ul className="dropdownMenu">
                 <li>Independant Mortgage Banks</li>
